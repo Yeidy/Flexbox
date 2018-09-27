@@ -1,0 +1,22 @@
+body{
+    background-color: #333333;
+}
+
+.box{
+width: 50px;
+height: 50px;
+background-color: #ff5000;
+animation-name: myanimation;
+animation-duration: 5s;
+animation-timing-function: inline;
+animation-direction: alternate;
+position: relative;
+}
+
+@keyframes myanimation{
+    0% {background-color:#ff5000; top:0px; left: 0px; }
+    25% {background-color:#red; top:0px; left: 250px; border-radius: 50%; }
+    50% {background-color:#pink; top:250px; left: 250px; border-radius: 20%; }
+    75% {background-color:#red; top:0px; left: 250px; }
+    100% {background-color:#ff5000; top:0px; left: 0px; }
+}
